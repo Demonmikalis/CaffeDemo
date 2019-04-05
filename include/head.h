@@ -8,7 +8,12 @@
 #include "caffe/layers/pooling_layer.hpp"
 #include "caffe/layers/lrn_layer.hpp"
 #include "caffe/layers/softmax_layer.hpp"
- 
+#include "caffe/layers/permute_layer.hpp"
+#include "caffe/layers/flatten_layer.hpp"
+#include "caffe/layers/prior_box_layer.hpp"
+#include "caffe/layers/concat_layer.hpp"
+#include "caffe/layers/reshape_layer.hpp"
+#include "caffe/layers/detection_output_layer.hpp"
  
 namespace caffe
 {
@@ -26,4 +31,11 @@ namespace caffe
 	REGISTER_LAYER_CLASS(LRN);
 	extern INSTANTIATE_CLASS(SoftmaxLayer);
 	REGISTER_LAYER_CLASS(Softmax);
+	extern INSTANTIATE_CLASS(FlattenLayer);
+	extern INSTANTIATE_CLASS(PermuteLayer);
+	extern INSTANTIATE_CLASS(PriorBoxLayer);
+	extern INSTANTIATE_CLASS(ConcatLayer);
+	extern INSTANTIATE_CLASS(ReshapeLayer);
+	extern INSTANTIATE_CLASS(DetectionOutputLayer);
+	//REGISTER_LAYER_CLASS(Flatten);
 }

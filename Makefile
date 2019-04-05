@@ -18,7 +18,7 @@ CPPFLAGS = -Wall -g -std=c++11
 LDFLAGS = ./lib/libcaffe.a -lopencv_core -lopencv_highgui -lopencv_imgproc\
 -lglog -lprotobuf -lboost_system -lboost_filesystem -lm -lpthread -lgflags -lcublas \
 -lcblas -lcuda -lcusolver -lcudart -lcusparse -lhdf5_serial -lcurand -lboost_thread \
--lhdf5_serial_hl
+-lhdf5_serial_hl -lboost_regex
 
 
 INC = -I/usr/local/include -I/usr/local/cuda-9.0/include -I./include 
